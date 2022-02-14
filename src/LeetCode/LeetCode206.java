@@ -2,7 +2,7 @@ package LeetCode;
 
 /**
  * 206. Reverse Linked List
- * URL: https://leetcode.com/problems/reverse-linked-list/
+ * URL: https://leetcode.com/problems/reverse-linked-list
  */
 public class LeetCode206
 {
