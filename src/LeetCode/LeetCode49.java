@@ -11,32 +11,29 @@ public class LeetCode49 {
     class Solution {
     
         public List<List<String>> groupAnagrams(String[] strs) {
-            
-            HashMap<String,ArrayList<String>> map = new HashMap<>();
         
+            HashMap<String,ArrayList<String>> map = new HashMap<String,ArrayList<String>>();
+            
             for(String s: strs){
                 
-                char[] arr = s.toCharArray();
-                Arrays.sort(arr);
-                String key = new String(arr);
-    
-                if(!map.containsKey(key)){
-                    ArrayList<String> newlist = new ArrayList<String>();
-                    newlist.add(s);
-                    map.put(key, newlist);
+                System.out.println(s);
+                
+                char[] charArr = s.toCharArray();
+                
+                Arrays.sort(charArr);
+                
+                String key = new String(charArr);
+                
+                if(map.get(key) == null){
+                    ArrayList<String> list = new ArrayList<String>();
+                    list.add(s);
+                    map.put(key,list);
                 } else {
                     map.get(key).add(s);
                 }
+                
             }
             
-            List<List<String>> list = new  ArrayList<List<String>>();
-            
-            for(ArrayList<String> l: map.values()){
-                list.add(l);
-            }
-            
-            return list;
-            
-        }
+            return new ArrayList(map.values());
     }
 }

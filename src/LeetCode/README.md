@@ -9,6 +9,10 @@
 [[Solution](LeetCode116.java)]
 [[LeetCode Link](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)]
 
+146.LRU Cache
+[[Solution](LeetCode146.java)]
+[[LeetCode Link](https://leetcode.com/problems/lru-cache/)]
+
 206.Reverse Linked List
 [[Solution](LeetCode206.java)]
 [[LeetCode Link](https://leetcode.com/problems/reverse-linked-list)]
